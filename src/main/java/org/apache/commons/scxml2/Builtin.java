@@ -40,6 +40,7 @@ public class Builtin implements Serializable {
      * @return Whether this State is current active
      */
     public static boolean isMember(final Context ctx, final String state) {
+        System.out.println("Hello World");
         return ((Status)ctx.getSystemContext().getPlatformVariables().get(SCXMLSystemContext.STATUS_KEY)).isInState(state);
     }
 }
